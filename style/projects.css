@@ -1,0 +1,50 @@
+body {
+    background-color: #fff; 
+    border: solid 5px #b3b3b3;
+}
+
+#projects h1, projects p{
+    color: #181818;
+}
+
+.navbar--white ul li a{
+    color: #181818;
+}
+
+.active--white{    
+    border-bottom: solid 2px #181818;
+}
+
+
+.footer__icons--white ul li a i{
+    color: #181818;
+}
+
+.project--content{
+    margin-top: 50px;
+}
+
+.project--content img{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about__block--white{
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.about__block--white h3{
+    color: #3A3C83;
+    border-bottom: solid 2px #3A3C83;
+}
+
+
+/*-----------MEDIA QUERIES------------*/
+
+@media (max-width:1000px) { 
+    .about__block--white{
+        margin-bottom: 20px;
+    }
+}
