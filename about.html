@@ -8,7 +8,7 @@
       <meta name="description" content="I'm João Marques, a Multimedia Designer.">
       
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
-    <meta name="author" content="João Marques 2016">
+    <meta name="author" content="João Marques 2017">
     <link rel="icon" href="assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
 
@@ -25,7 +25,6 @@
 
   <body class="loading-black">
     <img class="right-logo logo-rotate" src="assets/logo.png"/>
-    <section>
     <nav class="navbar">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -37,8 +36,6 @@
       </div>
     </nav>
     
-    <img class="right-logo" src="assets/logo.png"/>
-    
 
     <div class="container-fluid" id="about">
 
@@ -48,7 +45,8 @@
       </div>
         
         
-        
+        <section>
+        <a href="index.html"><img class="right-logo" src="assets/logo.png"/></a>    
         <div class="text-container">
             
             <!-----------ROW 1--------------------->
@@ -60,12 +58,12 @@
                 
                 <div class="col-sm-6">
                     <div class="about-image">
-                    <a class="portfolio__project about-image" href="#">
+                    <a class="portfolio__project about-image" target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-marques-90b97211b">
                    
                     <img class="portfolio__bottom-image" src="assets/about/profile.jpg"/>
                     </a>
                     </div>
-                    <p>My name is João Rafael Nogueira Marques and I'm a multimedia designer.<br><br> I was born in 1995 in a small town called Rio Maior, Portugal, where I grew up. Since I was a child, my interests were already connected in some way to my professional vocation, by the hours I spent playing in a 8-bit videogame console, or by my fascination when I looked at a computer monitor and desired to find out everything that machine had to offer. <br><br>
+                    <p>My name is João Marques and I'm a multimedia designer.<br><br> I was born in 1995 in a small town called Rio Maior, Portugal, where I grew up. Since I was a child, my interests were already connected in some way to my professional vocation, by the hours I spent playing in a 8-bit videogame console, or by my fascination when I looked at a computer monitor and desired to find out everything that machine had to offer. <br><br>
 In 2013 I started my degree in Design and Multimedia at the University of Coimbra, Portugal, and since, that city has become my second home. I've finished my degree this year and currently i'm working as intern in a IoT studio, altough I have interest in collaborating on new projects that may arise. <br><br>All the work shown on the portfolio of this website was made in an academic context and reflect my evolution as a designer as well as developer over these three years.</p>
                     
                     
@@ -151,12 +149,12 @@ In 2013 I started my degree in Design and Multimedia at the University of Coimbr
             </div>
             
         </div>    
-        
+        </section>
         
         
     <footer>
         <div class="footer__text hidden-xs">
-            <p>by João Marques . 2016</p>
+            <p>by João Marques . 2017</p>
         </div>    
         <div class="footer__icons">
             <ul>
@@ -179,20 +177,15 @@ In 2013 I started my degree in Design and Multimedia at the University of Coimbr
     <script src="resources/bootstrap.min.js"></script>
     
     <script>
-        $(window).load(function() {
-        $('body').removeClass("loading-black").addClass('loaded');
-        $('.title').addClass("title--animated");
-        $('.logo-rotate').addClass("logo-rotate__loaded");  
         setTimeout(function(){
-        $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
-        }, 600);
-            
-        setTimeout(function(){
-        $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
-        }, 600);
+            $('.title').addClass("title--animated");
+        }, 100);
         
-});  
+        $(window).load(function() {
+            $('body').removeClass("loading-black").addClass('loaded');
+            $('.logo-rotate').addClass("logo-rotate__loaded");  
+            $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
+        });  
     </script>  
-    </section>
   </body>
 </html>

@@ -8,7 +8,7 @@
       <meta name="description" content="I'm João Marques, a Multimedia Designer.">
       
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
-    <meta name="author" content="João Marques 2016">
+    <meta name="author" content="João Marques 2017">
     <link rel="icon" href="../assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
 
@@ -26,7 +26,6 @@
 
   <body class="loading">
       <img class="right-logo logo-rotate" src="../assets/logob.png"/>
-      <section>
     <nav class="navbar navbar--white">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -37,8 +36,6 @@
         </div>
       </div>
     </nav>
-    
-    <img class="right-logo" src="../assets/logob.png"/>
     
 
     <div class="container-fluid" id="project">
@@ -86,17 +83,19 @@
 
                     <p>Festa das Latas & Imposição de Insígnias is the second most important academic party of Coimbra, and the first ever for the newcomers freshman of university. <br><br>The website of the 2016 edition follows the graphic image created by Rúben Silva, Carla Mendes, Filipa Cruz and Beatriz Lacerda.</p>
                     
-                    
-                    <img src="../assets/projects/festa_das_latas_16/latada16_1.png"/>
-                    
-                    <img src="../assets/projects/festa_das_latas_16/latada16_2.png"/>
-                    
-                    <img src="../assets/projects/festa_das_latas_16/latada16_3.png"/>
-                    
-                    <img src="../assets/projects/festa_das_latas_16/latada16_4.png"/>
-                    
-                    <img src="../assets/projects/festa_das_latas_16/latada16_5.png"/>
-                    
+                    <section>   
+                        <a href="../index.html"><img class="right-logo" src="../assets/logob.png"/></a>
+
+                        <img src="../assets/projects/festa_das_latas_16/latada16_1.png"/>
+
+                        <img src="../assets/projects/festa_das_latas_16/latada16_2.png"/>
+
+                        <img src="../assets/projects/festa_das_latas_16/latada16_3.png"/>
+
+                        <img src="../assets/projects/festa_das_latas_16/latada16_4.png"/>
+
+                        <img src="../assets/projects/festa_das_latas_16/latada16_5.png"/>
+                    </section>
 
                     
                     <div class="row margin-top-20">
@@ -124,7 +123,7 @@
         
     <footer>
         <div class="footer__text hidden-xs">
-            <p>by João Marques . 2016</p>
+            <p>by João Marques . 2017</p>
         </div>    
         <div class="footer__icons footer__icons--white">
             <ul>
@@ -146,20 +145,13 @@
     <script src="../resources/bootstrap.min.js"></script>
     
     <script>
+        setTimeout(function(){
+            $('.title').addClass("title--animated");
+        }, 100);
         $(window).load(function() {
-        $('body').removeClass("loading").addClass('loaded');
-        $('.title').addClass("title--animated");
-        $('.logo-rotate').addClass("logo-rotate__loaded"); 
-        setTimeout(function(){
-        $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
-        }, 600);
-            
-        setTimeout(function(){
-        $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
-        }, 600);
-        
-});  
-    </script>  
-      </section>
+            $('body').removeClass("loading").addClass('loaded');
+            $('.logo-rotate').addClass("logo-rotate__loaded");     
+        });  
+    </script> 
   </body>
 </html>

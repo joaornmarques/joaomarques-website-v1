@@ -30,12 +30,12 @@
 
 .portfolio__bottom-image--animated{
     box-shadow: -15px -15px 0px #1f2047;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 .portfolio__project:hover > .portfolio__bottom-image{
-    box-shadow: -25px -25px 0px #1f2047;
-    opacity: 0.8;
+    box-shadow: -15px -15px 0px #1f2047;
+    opacity: 0.6;
 }
 
 @media (max-width:767px) { 
@@ -153,7 +153,7 @@ input[type=submit]{
     border: none;
     border-bottom: solid 2px #3A3C83;
     color: #3A3C83;
-    font-size: 16px;
+    font-size: 18px;
     padding: 4px 0px;
     padding-bottom: 6px;
     margin-top: 20px;

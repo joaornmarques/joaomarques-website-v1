@@ -8,7 +8,7 @@
       <meta name="description" content="I'm João Marques, a Multimedia Designer.">
       
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
-    <meta name="author" content="João Marques 2016">
+    <meta name="author" content="João Marques 2017">
     <link rel="icon" href="../assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
 
@@ -26,7 +26,6 @@
 
   <body class="loading">
       <img class="right-logo logo-rotate" src="../assets/logob.png"/>
-      <section>
     <nav class="navbar navbar--white">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -37,8 +36,6 @@
         </div>
       </div>
     </nav>
-    
-    <img class="right-logo" src="../assets/logob.png"/>
     
 
     <div class="container-fluid" id="project">
@@ -77,18 +74,21 @@
 
                     <p>Victor Palla (1922-2006) was a key player in the history of Portuguese design, but also devoted to painting, architecture, photography and literature. This logo is based on his work, which is mainly composed of basic geometric elements. Project developed under the class of Design II.</p>
                     
-                    <div class='video-container'><iframe src="https://player.vimeo.com/video/150300215?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                    
-                    <img src="../assets/projects/victor_palla/palla5.png"/>
-                    
-                    <img src="../assets/projects/victor_palla/palla1.png"/>
-                    
-                    <img src="../assets/projects/victor_palla/palla2.png"/>
-                    
-                    <img src="../assets/projects/victor_palla/palla3.png"/>
-                    
-                    <div class='video-container'><iframe width="500" height="281" src="//e.issuu.com/embed.html#21052527/32284180" frameborder="0" allowfullscreen></iframe></div>
-                    
+                    <section>
+                        <a href="../index.html"><img class="right-logo" src="../assets/logob.png"/></a>
+
+                        <div class='video-container'><iframe src="https://player.vimeo.com/video/150300215?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+
+                        <img src="../assets/projects/victor_palla/palla5.jpg"/>
+
+                        <img src="../assets/projects/victor_palla/palla1.png"/>
+
+                        <img src="../assets/projects/victor_palla/palla2.png"/>
+
+                        <img src="../assets/projects/victor_palla/palla3.png"/>
+
+                        <div class='video-container'><iframe width="500" height="281" src="//e.issuu.com/embed.html#21052527/32284180" frameborder="0" allowfullscreen></iframe></div>
+                    </section>
 
                     
                     <div class="row margin-top-20">
@@ -120,7 +120,7 @@
         
     <footer>
         <div class="footer__text hidden-xs">
-            <p>by João Marques . 2016</p>
+            <p>by João Marques . 2017</p>
         </div>    
         <div class="footer__icons footer__icons--white">
             <ul>
@@ -142,20 +142,13 @@
     <script src="../resources/bootstrap.min.js"></script>
     
     <script>
+        setTimeout(function(){
+            $('.title').addClass("title--animated");
+        }, 100);
         $(window).load(function() {
-        $('body').removeClass("loading").addClass('loaded');
-        $('.title').addClass("title--animated");
-        $('.logo-rotate').addClass("logo-rotate__loaded"); 
-        setTimeout(function(){
-        $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
-        }, 600);
-            
-        setTimeout(function(){
-        $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
-        }, 600);
-        
-});  
-    </script>  
-      </section>
+            $('body').removeClass("loading").addClass('loaded');
+            $('.logo-rotate').addClass("logo-rotate__loaded");     
+        });  
+    </script>   
   </body>
 </html>

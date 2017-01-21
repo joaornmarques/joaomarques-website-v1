@@ -8,7 +8,7 @@
       <meta name="description" content="I'm João Marques, a Multimedia Designer.">
       
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
-    <meta name="author" content="João Marques 2016">
+    <meta name="author" content="João Marques 2017">
     <link rel="icon" href="../assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
 
@@ -26,7 +26,6 @@
 
   <body class="loading">
       <img class="right-logo logo-rotate" src="../assets/logob.png"/>
-      <section>
     <nav class="navbar navbar--white">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -37,8 +36,6 @@
         </div>
       </div>
     </nav>
-    
-    <img class="right-logo" src="../assets/logob.png"/>
     
 
     <div class="container-fluid" id="project">
@@ -76,13 +73,14 @@
                 <div class="col-sm-6">
 
                     <p>Layout for an eventual mobile app for the Ciclo de Conversas Design + Multimédia, an event that occur every year in April. The proposal of this layout is to be adaptable to the future graphical identities of the event. Developed under the class of Design II.</p>
+                    <section>
+                        <a href="../index.html"><img class="right-logo" src="../assets/logob.png"/></a>
+                        <div class='video-container'><iframe src="https://player.vimeo.com/video/150287291?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                     
-                    <div class='video-container'><iframe src="https://player.vimeo.com/video/150287291?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                        <img src="../assets/projects/ccdm_app/ccdmapp1.jpg"/>
                     
-                    <img src="../assets/projects/ccdm_app/ccdmapp1.png"/>
-                    
-                    <img src="../assets/projects/ccdm_app/ccdmapp2.png"/>
-                    
+                        <img src="../assets/projects/ccdm_app/ccdmapp2.jpg"/>
+                    </section>
                     
                     
                     
@@ -117,7 +115,7 @@
         
     <footer>
         <div class="footer__text hidden-xs">
-            <p>by João Marques . 2016</p>
+            <p>by João Marques . 2017</p>
         </div>    
         <div class="footer__icons footer__icons--white">
             <ul>
@@ -139,20 +137,13 @@
     <script src="../resources/bootstrap.min.js"></script>
     
     <script>
+        setTimeout(function(){
+            $('.title').addClass("title--animated");
+        }, 100);
         $(window).load(function() {
-        $('body').removeClass("loading").addClass('loaded');
-        $('.title').addClass("title--animated");
-        $('.logo-rotate').addClass("logo-rotate__loaded"); 
-        setTimeout(function(){
-        $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
-        }, 600);
-            
-        setTimeout(function(){
-        $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
-        }, 600);
-        
-});  
-    </script>  
-      </section>
+            $('body').removeClass("loading").addClass('loaded');
+            $('.logo-rotate').addClass("logo-rotate__loaded");     
+        });  
+    </script>
   </body>
 </html>

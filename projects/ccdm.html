@@ -8,7 +8,7 @@
       <meta name="description" content="I'm João Marques, a Multimedia Designer.">
       
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
-    <meta name="author" content="João Marques 2016">
+    <meta name="author" content="João Marques 2017">
     <link rel="icon" href="../assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
 
@@ -26,7 +26,6 @@
 
   <body class="loading">
       <img class="right-logo logo-rotate" src="../assets/logob.png"/>
-      <section>
     <nav class="navbar navbar--white">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -37,9 +36,6 @@
         </div>
       </div>
     </nav>
-    
-    <img class="right-logo" src="../assets/logob.png"/>
-    
 
     <div class="container-fluid" id="project">
 
@@ -80,23 +76,26 @@
                 <div class="col-sm-6">
 
                     <p>Proposal for graphical image event held in April 2015 in the auditorium of the Museum of Science, University of Coimbra, developed under the class of Design I in partnership with Érica Soares. The project was based on the cultural week's theme of University of Coimbra, "meeting time".</p>
-                
-                    <img src="../assets/projects/ccdm/ccdm1.png"/>
-                    
-                    <img src="../assets/projects/ccdm/ccdm3.jpg"/>
-                    
-                    <img src="../assets/projects/ccdm/ccdm4.jpg"/>
-                    
-                    <img src="../assets/projects/ccdm/ccdm5.jpg"/>
-                    
-                    <img src="../assets/projects/ccdm/ccdm6.jpg"/>
-                    
-                    <img src="../assets/projects/ccdm/ccdm7.jpg"/>
-                    
-                    <img src="../assets/projects/ccdm/ccdm8.jpg"/>
-                    
-                    <img src="../assets/projects/ccdm/ccdm9.jpg"/>
-                    
+                    <section>
+                        <a href="../index.html"><img class="right-logo" src="../assets/logob.png"/></a>
+                        
+                        <img src="../assets/projects/ccdm/ccdm1.jpg"/>
+
+                        <img src="../assets/projects/ccdm/ccdm3.jpg"/>
+
+                        <img src="../assets/projects/ccdm/ccdm4.jpg"/>
+
+                        <img src="../assets/projects/ccdm/ccdm5.jpg"/>
+
+                        <img src="../assets/projects/ccdm/ccdm6.jpg"/>
+
+                        <img src="../assets/projects/ccdm/ccdm7.jpg"/>
+
+                        <img src="../assets/projects/ccdm/ccdm8.jpg"/>
+
+                        <img src="../assets/projects/ccdm/ccdm9.jpg"/>
+                        
+                    </section>
                     <div class="row margin-top-20">
                     
                         <div class="col-md-6">
@@ -119,7 +118,7 @@
         
     <footer>
         <div class="footer__text hidden-xs">
-            <p>by João Marques . 2016</p>
+            <p>by João Marques . 2017</p>
         </div>    
         <div class="footer__icons footer__icons--white">
             <ul>
@@ -141,20 +140,13 @@
     <script src="../resources/bootstrap.min.js"></script>
     
     <script>
+        setTimeout(function(){
+            $('.title').addClass("title--animated");
+        }, 100);
         $(window).load(function() {
-        $('body').removeClass("loading").addClass('loaded');
-        $('.title').addClass("title--animated");
-        $('.logo-rotate').addClass("logo-rotate__loaded"); 
-        setTimeout(function(){
-        $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
-        }, 600);
-            
-        setTimeout(function(){
-        $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
-        }, 600);
-        
-});  
+            $('body').removeClass("loading").addClass('loaded');
+            $('.logo-rotate').addClass("logo-rotate__loaded");     
+        });  
     </script>  
-      </section>
   </body>
 </html>

@@ -8,7 +8,7 @@
       <meta name="description" content="I'm João Marques, a Multimedia Designer.">
       
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
-    <meta name="author" content="João Marques 2016">
+    <meta name="author" content="João Marques 2017">
     <link rel="icon" href="assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
 
@@ -48,7 +48,6 @@
 
   <body class="loading-black">
     <img class="right-logo logo-rotate" src="assets/logo.png"/>
-    <section>
     <nav class="navbar">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -59,9 +58,6 @@
         </div>
       </div>
     </nav>
-    
-    <img class="right-logo" src="assets/logo.png"/>
-    
 
     <div class="container-fluid" id="about">
 
@@ -71,7 +67,9 @@
       </div>
         
         
-        
+        <section>
+        <a href="index.html"><img class="right-logo" src="assets/logo.png"/></a>
+            
         <div class="text-container">
             
             <!-----------ROW 1--------------------->
@@ -150,12 +148,12 @@
             </div>
             
         </div>    
-        
+        </section>
         
         
     <footer>
         <div class="footer__text hidden-xs">
-            <p>by João Marques . 2016</p>
+            <p>by João Marques . 2017</p>
         </div>    
         <div class="footer__icons">
             <ul>
@@ -178,20 +176,22 @@
     <script src="resources/bootstrap.min.js"></script>
     
     <script>
-        $(window).load(function() {
-        $('body').removeClass("loading-black").addClass('loaded');
-        $('.title').addClass("title--animated");
-        $('.logo-rotate').addClass("logo-rotate__loaded");  
         setTimeout(function(){
-        $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
-        }, 600);
-            
-        setTimeout(function(){
-        $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
-        }, 600);
+            $('.title').addClass("title--animated");
+        }, 100);
         
-});  
+        $(window).load(function() {
+            $('body').removeClass("loading-black").addClass('loaded');
+            $('.logo-rotate').addClass("logo-rotate__loaded");  
+            
+            setTimeout(function(){
+                $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
+            }, 100);
+
+            setTimeout(function(){
+                $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
+            }, 100);
+        });  
     </script>  
-    </section>
   </body>
 </html>
