@@ -69,7 +69,7 @@
     <div class="container-fluid" id="about">
 
       <div class="title">
-        <h1>Fell free to contact me, anytime.</h1>
+        <h1>Feel free to contact me, anytime.</h1>
           <p class="lead">Send me a message or follow my social networking accounts... and why not both?</p>
       </div>
         
