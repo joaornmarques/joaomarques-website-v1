@@ -4,14 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-      <meta name="description" content="I'm João Marques, a Multimedia Designer.">
+    <meta name="robots" content="noydir, noodp">
+    <meta name="description" content="I'm João Marques, a Multimedia Designer.">
       
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
     <meta name="author" content="João Marques 2017">
     <link rel="icon" href="assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
-
+    <meta property="og:title"  content="Get in Touch - João Marques" />
+    <meta property="og:url"    content="http://joaomarques.altervista.org" />
+    <meta property="og:type"   content="website" />  
+    <meta name="twitter:card" content="João Marques — Multimedia Designer" />
+    <meta name="twitter:site" content="@joaornmarques" />
+    <meta name="twitter:creator" content="joaornmarques" />
+    <link rel="canonical" href="http://joaomarques.altervista.org">  
+      
     <title>Get in Touch - João Marques</title>
 
     <link href="resources/bootstrap.min.css" rel="stylesheet">
