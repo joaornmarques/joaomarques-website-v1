@@ -1,7 +1,27 @@
+/*-------------------------------------
+------------FONT FACE------------------
+-------------------------------------*/
+
+
+@font-face {
+    font-family: HKGrotesk-MediumItalic;
+    src: url("/assets/fonts/HKGrotesk-MediumItalic.otf");
+}
+
+@font-face {
+    font-family: HKGrotesk-Regular;
+    src: url("/assets/fonts/HKGrotesk-Regular.otf");
+}
+
+/*-------------------------------------
+-----------------BODY------------------
+-------------------------------------*/
+
+
 body {
     background-color: #3A3C83;  
     padding: 30px;
-    border: solid 5px #fff;
+    border: solid 5px #1f2047;
 }
 
 
@@ -11,12 +31,12 @@ body {
 -------------------------------------*/
 
 h1{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'HKGrotesk-MediumItalic', sans-serif;
     font-size: 50px;
 }
 
 h2{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'HKGrotesk-MediumItalic', sans-serif;
     font-size: 30px;
 }
 
@@ -33,14 +53,14 @@ h4{
 
 
 p{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
+    font-family: 'HKGrotesk-Regular', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 a{
     font-family: 'Space mono', monospace;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -59,6 +79,12 @@ a:visited{
 
 .text-container{
     margin-bottom: 10%;
+    opacity: 0;
+}
+
+.text-container--animated{
+    transition: 0.8s ease;
+    opacity: 1;
 }
 
 .text-right{
@@ -95,9 +121,9 @@ section {
 }
 
 .logo-rotate{
-    -webkit-animation:spin 3s ease infinite;
-    -moz-animation:spin 3s ease infinite;
-    animation:spin 3s ease infinite;
+    -webkit-animation:spin 2s cubic-bezier(.81,.04,.28,.99) infinite;
+    -moz-animation:spin 2s cubic-bezier(.81,.04,.28,.99) infinite;
+    animation:spin 2s cubic-bezier(.81,.04,.28,.99) infinite;
     transition: 0.3s ease;
     
     -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
@@ -148,7 +174,8 @@ section {
     position: fixed;
     right: 45px;
     top: 45px;
-    width: 60px;
+    width: 60px !important; 
+    margin: 0 !important;
     z-index: 99999;
 }
 
@@ -178,14 +205,16 @@ section {
 
 .title{
     padding-bottom: 40px;
-    margin-top: -50px;
+    margin-top: 0px;
+    transform: scale(0.95);
     opacity: 0;
-    transition: 0.8s ease;
+    transition: 1s cubic-bezier(.03,.91,.38,.92);
 }
 
 .title--animated{
     margin-top: 0px;
     opacity: 1;   
+    transform: scale(1);
 }
 
 
@@ -216,7 +245,7 @@ section {
     transform: rotate(210deg) skew(-30deg) translate(-100%, -25%) scaleY(0.864);
     opacity: 0;
     transition: 0.4s ease;
-    box-shadow: 0px 0px 0px #3A3C83;
+    box-shadow: -20px -20px 0px #3A3C83;
 }
 
 
@@ -270,8 +299,8 @@ section {
 /*--------------hover---------------*/
 
 .portfolio__project:hover > .portfolio__bottom-image{
-    box-shadow: -40px -40px 0px #1f2047;
-    opacity: 0.3;
+    box-shadow: -20px -20px 0px #1f2047;
+    opacity: 0.2;
 }
 
 .portfolio__project:hover > .portfolio__logo-image{
@@ -282,11 +311,6 @@ section {
 .portfolio__project:hover > .portfolio__info{
     opacity: 1;
     bottom: -30%;
-}
-
-
-.portfolio__project:hover > .portfolio__info h2{
-    text-decoration: underline;
 }
 
 /*-------------------------------------
@@ -477,7 +501,7 @@ section {
     }
     
     h3{
-        font-size: 16px;
+        font-size: 14px;
     }
     
     
@@ -498,10 +522,11 @@ section {
     
     
     .right-logo{
-        position: absolute;
+        position: fixed;
         right: 20px;
         top: 20px;
-        width: 40px;
+        width: 40px !important;
+        margin: 0 !important;
         z-index: 99999;
     }
     

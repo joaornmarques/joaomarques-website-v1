@@ -4,13 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-      <meta name="description" content="I'm João Marques, a Multimedia Designer.">
+    <meta name="robots" content="noydir, noodp">
+    <meta name="description" content="I'm João Marques, a Multimedia Designer.">
       
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
-    <meta name="author" content="João Marques 2016">
+    <meta name="author" content="João Marques 2017">
     <link rel="icon" href="../assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
+    <meta property="og:title"  content="Hollywood Channel Rebranding - João Marques" />
+    <meta property="og:url"    content="http://joaomarques.altervista.org" />
+    <meta property="og:type"   content="website" />  
+    <meta name="twitter:card" content="João Marques — Multimedia Designer" />
+    <meta name="twitter:site" content="@joaornmarques" />
+    <meta name="twitter:creator" content="joaornmarques" />
+    <link rel="canonical" href="http://joaomarques.altervista.org">   
 
     <title>Hollywood Channel Rebranding - João Marques</title>
 
@@ -20,13 +27,13 @@
     <link href="../style/projects.css" rel="stylesheet">
       
     <link rel="stylesheet" href="../resources/fa/css/font-awesome.min.css">  
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Work+Sans:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i" rel="stylesheet">
     
   </head>
 
   <body class="loading">
       <img class="right-logo logo-rotate" src="../assets/logob.png"/>
-      <section>
+      
     <nav class="navbar navbar--white">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -38,7 +45,7 @@
       </div>
     </nav>
     
-    <img class="right-logo" src="../assets/logob.png"/>
+    
     
 
     <div class="container-fluid" id="project">
@@ -83,9 +90,11 @@
                 </div>  
                 
                 <div class="col-sm-6">
-
+                    
                     <p>This project, developed with Érica Soares and Luís Abreu under the class of Digital Production, consists in a rebranding proposal of the graphic identity of Hollywood channel, more dynamic and actual, as well as more colorful.<br><br>The following videos show all the identity that we create in action.<br><br></p>
                     
+                    <section>   
+                    <a href="../index.html"><img class="right-logo" src="../assets/logob.png"/></a>   
                     <div class='video-container'><iframe src="https://player.vimeo.com/video/148725817?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                 
                     <div class='video-container'><iframe src="https://player.vimeo.com/video/146763629?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
@@ -103,7 +112,7 @@
                     <div class='video-container'><iframe src="https://player.vimeo.com/video/145064893?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
                     <div class='video-container'><iframe src="https://player.vimeo.com/video/145072480?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                    
+                    </section>
                     
                     <div class="row margin-top-20">
                     
@@ -122,7 +131,7 @@
                         </div>
                         
                     </div>
-
+                    
                     
                 </div>  
                 
@@ -134,7 +143,7 @@
         
     <footer>
         <div class="footer__text hidden-xs">
-            <p>by João Marques . 2016</p>
+            <p>by João Marques . 2017</p>
         </div>    
         <div class="footer__icons footer__icons--white">
             <ul>
@@ -156,20 +165,16 @@
     <script src="../resources/bootstrap.min.js"></script>
     
     <script>
+        setTimeout(function(){
+            $('.title').addClass("title--animated");
+        }, 100);
+        setTimeout(function(){
+            $('.text-container').addClass("text-container--animated");
+        }, 400);
         $(window).load(function() {
-        $('body').removeClass("loading").addClass('loaded');
-        $('.title').addClass("title--animated");
-        $('.logo-rotate').addClass("logo-rotate__loaded"); 
-        setTimeout(function(){
-        $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
-        }, 600);
-            
-        setTimeout(function(){
-        $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
-        }, 600);
-        
-});  
-    </script>  
-      </section>
+            $('body').removeClass("loading").addClass('loaded');
+            $('.logo-rotate').addClass("logo-rotate__loaded");     
+        });  
+    </script>
   </body>
 </html>

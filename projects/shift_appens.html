@@ -4,13 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-      <meta name="description" content="I'm João Marques, a Multimedia Designer.">
+    <meta name="robots" content="noydir, noodp">
+    <meta name="description" content="I'm João Marques, a Multimedia Designer.">
       
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
-    <meta name="author" content="João Marques 2016">
+    <meta name="author" content="João Marques 2017">
     <link rel="icon" href="../assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
+    <meta property="og:title"  content="Shift APPens 2016 - João Marques" />
+    <meta property="og:url"    content="http://joaomarques.altervista.org" />
+    <meta property="og:type"   content="website" />  
+    <meta name="twitter:card" content="João Marques — Multimedia Designer" />
+    <meta name="twitter:site" content="@joaornmarques" />
+    <meta name="twitter:creator" content="joaornmarques" />
+    <link rel="canonical" href="http://joaomarques.altervista.org"> 
 
     <title>Shift APPens 2016 - João Marques</title>
 
@@ -20,13 +27,12 @@
     <link href="../style/projects.css" rel="stylesheet">
       
     <link rel="stylesheet" href="../resources/fa/css/font-awesome.min.css">  
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Work+Sans:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i" rel="stylesheet">
     
   </head>
 
    <body class="loading">
        <img class="right-logo logo-rotate" src="../assets/logob.png"/>
-    <section>
     <nav class="navbar navbar--white">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -37,9 +43,6 @@
         </div>
       </div>
     </nav>
-    
-    <img class="right-logo" src="../assets/logob.png"/>
-    
 
     <div class="container-fluid" id="project">
 
@@ -87,34 +90,37 @@
 
                     <p>Shift APPens is a Hackathon orgainzed by Jeknowlege and NEI/AAC since 2014. The graphic line of the 2016 edition was created by me in partnership with Adriana Nunes. The logo was already defined since the first edition, so, our job was establish a new approach to the identity, with a pallete of four colors from which all the materials were based.</p>
                     
-                    <img src="../assets/projects/shift_appens/sh1.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh2.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh3.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh4.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh5.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh6.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh7.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh8.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh9.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh10.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh11.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh12.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh13.jpg"/>
-                    
-                    <img src="../assets/projects/shift_appens/sh14.jpg"/>
-                    
+                    <section>
+                        <a href="../index.html"><img class="right-logo" src="../assets/logob.png"/></a>
+                        
+                        <img src="../assets/projects/shift_appens/sh1.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh2.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh3.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh4.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh5.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh6.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh7.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh8.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh9.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh10.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh11.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh12.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh13.jpg"/>
+
+                        <img src="../assets/projects/shift_appens/sh14.jpg"/>
+                    </section>
                    
                     
                     <div class="row margin-top-20">
@@ -147,7 +153,7 @@
         
     <footer>
         <div class="footer__text hidden-xs">
-            <p>by João Marques . 2016</p>
+            <p>by João Marques . 2017</p>
         </div>    
         <div class="footer__icons footer__icons--white">
             <ul>
@@ -169,20 +175,16 @@
     <script src="../resources/bootstrap.min.js"></script>
     
     <script>
+        setTimeout(function(){
+            $('.title').addClass("title--animated");
+        }, 100);
+        setTimeout(function(){
+            $('.text-container').addClass("text-container--animated");
+        }, 400);
         $(window).load(function() {
-        $('body').removeClass("loading").addClass('loaded');
-        $('.title').addClass("title--animated");
-        $('.logo-rotate').addClass("logo-rotate__loaded"); 
-        setTimeout(function(){
-        $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
-        }, 600);
-            
-        setTimeout(function(){
-        $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
-        }, 600);
-        
-});  
-    </script>  
-    </section>
+            $('body').removeClass("loading").addClass('loaded');
+            $('.logo-rotate').addClass("logo-rotate__loaded");     
+        });  
+    </script>
   </body>
 </html>

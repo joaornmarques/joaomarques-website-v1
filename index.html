@@ -4,12 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="robots" content="noydir, noodp">
     <meta name="description" content="I'm João Marques, a Multimedia Designer.">
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
-    <meta name="author" content="João Marques 2016">
+    <meta name="author" content="João Marques 2017">
     <link rel="icon" href="assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
+    <meta property="og:title"  content="João Marques" />
+    <meta property="og:url"    content="http://joaomarques.altervista.org" />
+    <meta property="og:type"   content="website" />  
+    <meta name="twitter:card" content="João Marques — Multimedia Designer" />
+    <meta name="twitter:site" content="@joaornmarques" />
+    <meta name="twitter:creator" content="joaornmarques" />
+    <link rel="canonical" href="http://joaomarques.altervista.org">  
+      
 
     <title>João Marques</title>
 
@@ -17,13 +25,13 @@
     <link href="style/main.css" rel="stylesheet">
       
     <link rel="stylesheet" href="resources/fa/css/font-awesome.min.css">  
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Work+Sans:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i" rel="stylesheet">
     
   </head>
 
   <body class="loading-purple">
     <img class="right-logo logo-rotate" src="assets/logo.png"/>
-    <section>
+    
     <nav class="navbar">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -35,7 +43,7 @@
       </div>
     </nav>
     
-    <img class="right-logo" src="assets/logo.png"/>
+    
     
 
     <div class="container-fluid" id="landing">
@@ -44,8 +52,8 @@
         <h1>I'm João Marques, a Multimedia Designer.</h1>
         <p class="lead">Branding or Editorial Design, Motion Graphics and even Web development. That's what I do.</p>
       </div>
-        
-        
+    <section>    
+    <a href="index.html"><img class="right-logo" src="assets/logo.png"/></a>    
         
         <div class="portfolio">
             
@@ -161,7 +169,7 @@
         
     <footer>
         <div class="footer__text footer__text--landing hidden-xs">
-            <p><a href="v1/index.html">Link to v1.0 website</a><br>by João Marques . 2016</p>
+            <p><a href="v1/index.html">Link to v1.0 website</a><br>by João Marques . 2017</p>
         </div>    
         <div class="footer__icons">
             <ul>
@@ -185,18 +193,17 @@
     
     <script>
         $(window).load(function() {
-        $('body').removeClass("loading-purple").addClass('loaded');
-        $('.title').addClass("title--animated");
-        $('.logo-rotate').addClass("logo-rotate__loaded");    
-        setTimeout(function(){
-        $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
-        }, 600);
+            $('body').removeClass("loading-purple").addClass('loaded');
+            $('.title').addClass("title--animated");
+            $('.logo-rotate').addClass("logo-rotate__loaded");    
+            setTimeout(function(){
+                $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
+            }, 300);
             
-        setTimeout(function(){
-        $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
-        }, 600);
-        
-});  
+            setTimeout(function(){
+                $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
+            }, 600);
+        });  
     </script>  
     </section>
   </body>

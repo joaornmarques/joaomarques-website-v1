@@ -4,14 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-      <meta name="description" content="I'm João Marques, a Multimedia Designer.">
+    <meta name="robots" content="noydir, noodp">
+    <meta name="description" content="I'm João Marques, a Multimedia Designer.">
       
     <meta name="keywords" content="Design, Multimedia, Coimbra, Web Design, Motion Design, Web, Motion, Editorial Design, Editorial, Branding">
-    <meta name="author" content="João Marques 2016">
+    <meta name="author" content="João Marques 2017">
     <link rel="icon" href="assets/favicon.ico">
     <meta property="og:image" content="http://joaomarques.altervista.org/assets/thumbnail.png" />
-
+    <meta property="og:title"  content="Get in Touch - João Marques" />
+    <meta property="og:url"    content="http://joaomarques.altervista.org" />
+    <meta property="og:type"   content="website" />  
+    <meta name="twitter:card" content="João Marques — Multimedia Designer" />
+    <meta name="twitter:site" content="@joaornmarques" />
+    <meta name="twitter:creator" content="joaornmarques" />
+    <link rel="canonical" href="http://joaomarques.altervista.org">  
+      
     <title>Get in Touch - João Marques</title>
 
     <link href="resources/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +27,7 @@
     <link href="style/contact.css" rel="stylesheet">  
       
     <link rel="stylesheet" href="resources/fa/css/font-awesome.min.css">  
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i|Work+Sans:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i" rel="stylesheet">
     
       
     <?php 
@@ -48,7 +55,6 @@
 
   <body class="loading-black">
     <img class="right-logo logo-rotate" src="assets/logo.png"/>
-    <section>
     <nav class="navbar">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -59,19 +65,18 @@
         </div>
       </div>
     </nav>
-    
-    <img class="right-logo" src="assets/logo.png"/>
-    
 
     <div class="container-fluid" id="about">
 
       <div class="title">
-        <h1>Fell free to contact me, anytime.</h1>
+        <h1>Feel free to contact me, anytime.</h1>
           <p class="lead">Send me a message or follow my social networking accounts... and why not both?</p>
       </div>
         
         
-        
+        <section>
+        <a href="index.html"><img class="right-logo" src="assets/logo.png"/></a>
+            
         <div class="text-container">
             
             <!-----------ROW 1--------------------->
@@ -150,12 +155,12 @@
             </div>
             
         </div>    
-        
+        </section>
         
         
     <footer>
         <div class="footer__text hidden-xs">
-            <p>by João Marques . 2016</p>
+            <p>by João Marques . 2017</p>
         </div>    
         <div class="footer__icons">
             <ul>
@@ -178,20 +183,24 @@
     <script src="resources/bootstrap.min.js"></script>
     
     <script>
+        setTimeout(function(){
+            $('.title').addClass("title--animated");
+        }, 100);
+        setTimeout(function(){
+            $('.text-container').addClass("text-container--animated");
+        }, 400);
         $(window).load(function() {
-        $('body').removeClass("loading-black").addClass('loaded');
-        $('.title').addClass("title--animated");
-        $('.logo-rotate').addClass("logo-rotate__loaded");  
-        setTimeout(function(){
-        $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
-        }, 600);
+            $('body').removeClass("loading-black").addClass('loaded');
+            $('.logo-rotate').addClass("logo-rotate__loaded");  
             
-        setTimeout(function(){
-        $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
-        }, 600);
-        
-});  
+            setTimeout(function(){
+                $('.portfolio__logo-image').addClass("portfolio__logo-image--animated");
+            }, 100);
+
+            setTimeout(function(){
+                $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
+            }, 100);
+        });  
     </script>  
-    </section>
   </body>
 </html>
