@@ -79,6 +79,12 @@ a:visited{
 
 .text-container{
     margin-bottom: 10%;
+    opacity: 0;
+}
+
+.text-container--animated{
+    transition: 0.8s ease;
+    opacity: 1;
 }
 
 .text-right{

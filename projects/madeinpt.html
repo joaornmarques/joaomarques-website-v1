@@ -33,7 +33,6 @@
 
    <body class="loading">
        <img class="right-logo logo-rotate" src="../assets/logob.png"/>
-    <section>
     <nav class="navbar navbar--white">
       <div class="container-fluid">
           <ul class="nav navbar-nav">
@@ -159,6 +158,9 @@
         setTimeout(function(){
             $('.title').addClass("title--animated");
         }, 100);
+        setTimeout(function(){
+            $('.text-container').addClass("text-container--animated");
+        }, 400);
         $(window).load(function() {
             $('body').removeClass("loading").addClass('loaded');
             $('.logo-rotate').addClass("logo-rotate__loaded");     

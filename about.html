@@ -187,7 +187,9 @@ In 2013 I started my degree in Design and Multimedia at the University of Coimbr
         setTimeout(function(){
             $('.title').addClass("title--animated");
         }, 100);
-        
+        setTimeout(function(){
+            $('.text-container').addClass("text-container--animated");
+        }, 400);
         $(window).load(function() {
             $('body').removeClass("loading-black").addClass('loaded');
             $('.logo-rotate').addClass("logo-rotate__loaded");  

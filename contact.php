@@ -186,7 +186,9 @@
         setTimeout(function(){
             $('.title').addClass("title--animated");
         }, 100);
-        
+        setTimeout(function(){
+            $('.text-container').addClass("text-container--animated");
+        }, 400);
         $(window).load(function() {
             $('body').removeClass("loading-black").addClass('loaded');
             $('.logo-rotate').addClass("logo-rotate__loaded");  
