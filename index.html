@@ -23,6 +23,7 @@
 
     <link href="resources/bootstrap.min.css" rel="stylesheet">
     <link href="style/main.css" rel="stylesheet">
+    <link href="style/notice.css" rel="stylesheet">
       
     <link rel="stylesheet" href="resources/fa/css/font-awesome.min.css">  
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i" rel="stylesheet">
@@ -30,6 +31,15 @@
   </head>
 
   <body class="loading-purple">
+    <div class="n-span">
+        <img class="n-span__image" src="assets/landing/jurassic.gif" />
+        <h1 class="n-span__title">Ah Ah Ah!</h1>
+        <h2 class="n-span__subtitle">You are visiting an outdated website!</h2>
+        <p class="n-span__text u-m-b-40">You can visit my new special place on internet at <a class="n-span__text n-span__link" href="http://joaomarques.website/">joaomarques.website</a>.<br>
+        — But if you really want to see this one, still can do it. I will maintain it online for personal archive purposes.</p>
+        <a class="n-span__button close-n-span-js">Let me see this anyway!</a>
+
+    </div>
     <img class="right-logo logo-rotate" src="assets/logo.png"/>
     
     <nav class="navbar">
@@ -201,6 +211,9 @@
     
     <script>
         $(window).load(function() {
+            $('.close-n-span-js').click(function() {
+                $('.n-span').hide();
+            });
             $('body').removeClass("loading-purple").addClass('loaded');
             $('.title').addClass("title--animated");
             $('.logo-rotate').addClass("logo-rotate__loaded");    
@@ -211,7 +224,7 @@
             setTimeout(function(){
                 $('.portfolio__bottom-image').addClass("portfolio__bottom-image--animated");
             }, 600);
-        });  
+        });
     </script>  
     </section>
   </body>
