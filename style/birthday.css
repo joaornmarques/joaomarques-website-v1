@@ -1,0 +1,110 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.bd__image{
+    position: absolute;
+    box-shadow: 0 0 30px -10px #000;
+    transition: 0.3s cubic-bezier(.73,.13,.16,.98);
+}
+
+.bd__image:hover{
+    z-index: 6;
+    
+    transform: scale(1.5);
+}
+
+
+
+.bd__voucher{
+    z-index: 5;
+    width: 40%;
+    top: 25%;
+    left: 30%;
+    animation: intro-bottom 0.5s cubic-bezier(.73,.13,.16,.98);
+}
+
+
+.bd__photo1{
+    z-index: 2;
+    width: 30%;
+    top: 5%;
+    left: 5%;
+    animation: intro-top 0.3s cubic-bezier(.73,.13,.16,.98);
+}
+
+.bd__photo2{
+    z-index: 2;
+    width: 30%;
+    top: 40%;
+    left: 68%;
+    animation: intro-bottom 0.4s cubic-bezier(.73,.13,.16,.98);
+}
+
+.bd__photoG{
+    z-index: 2;
+    width: 30%;
+    top: -10%;
+    left: 50%;
+    animation: intro-bottom 0.8s cubic-bezier(.73,.13,.16,.98);
+}
+
+.bd__photo3{
+    z-index: 2;
+    width: 15%;
+    top: 70%;
+    left: 10%;
+    animation: intro-top 0.8s cubic-bezier(.73,.13,.16,.98);
+}
+
+.bd__photo7{
+    z-index: 1;
+    width: 10%;
+    top: 80%;
+    left: 20%;
+    animation: intro-bottom 0.7s cubic-bezier(.73,.13,.16,.98);
+}
+
+.bd__photo4{
+    z-index: 1;
+    width: 20%;
+    top: 55%;
+    left: 40%;
+    animation: intro-bottom 0.6s cubic-bezier(.73,.13,.16,.98);
+}
+
+.bd__photo5{
+    z-index: 1;
+    width: 20%;
+    top: 5%;
+    left: 75%;
+    animation: intro-top 0.9s cubic-bezier(.73,.13,.16,.98);
+}
+
+.bd__photo6{
+    z-index: 2;
+    width: 8%;
+    top: 30%;
+    left: 91%;
+    animation: intro-top 0.6s cubic-bezier(.73,.13,.16,.98);
+}
+
+.bd__photo9{
+    z-index: 1;
+    width: 30%;
+    top: -10%;
+    left: 30%;
+    animation: intro-top 0.9s cubic-bezier(.73,.13,.16,.98);
+}
+
+
+@keyframes intro-top {
+    from {margin-top: 100%;}
+    to {margin-top: 0}
+}
+
+@keyframes intro-bottom {
+    from {margin-top: -100%;}
+    to {margin-top: 0}
+}
